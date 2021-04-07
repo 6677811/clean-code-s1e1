@@ -1,162 +1,162 @@
 /* Basic Style */
 body {
-    background-color: #f8f8f8;
-    color: #333;
-    font-family: Lato, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
 }
 
 .eisenhower-matrix {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
-    text-align: right;
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
 }
 
 .eisenhower-matrix__image {
-    width: 100%;
+  width: 100%;
 }
 
 .eisenhower-matrix__link {
-    font-family: fantasy, cursive;
+  font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-    .eisenhower-matrix {
-        text-align: center;
-    }
+  .eisenhower-matrix {
+    text-align: center;
+  }
 
 }
 
 .content {
-    display: block;
-    width: 500px;
-    margin: 0 auto 0;
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
 }
 
 .input-block__input {
-    width: 56%;
-    display: inline-block;
-    flex-grow: 1;
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
 }
 
 .add-item__input-block {
-    display: flex;
-    padding: 30px 0 20px 0;
-    border-bottom: 1px solid #eee;
+  display: flex;
+  padding: 30px 0 20px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .list {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .input, .btn {
-    outline: none;
+  outline: none;
 }
 
 .btn {
-    background: none;
-    border: 0;
-    color: #888;
-    font-size: 15px;
-    width: 60px;
-    font-family: Lato, sans-serif;
-    cursor: pointer;
+  background: none;
+  border: 0;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
 }
 
 .btn:hover {
-    color: #3a3A3a;
+  color: #3a3A3a;
 }
 
 /* Heading */
 .add-item__title,
 .todo__title,
 .completed__title {
-    color: #333;
-    font-weight: 700;
-    font-size: 15px;
-    border-bottom: 2px solid #333;
-    padding: 30px 0 10px;
-    margin: 0;
-    text-transform: uppercase;
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .input__text {
-    margin: 0;
-    font-size: 18px;
-    line-height: 18px;
-    height: 21px;
-    padding: 0 9px;
-    border: 1px solid #dDd;
-    background: #FFF;
-    border-radius: 6px;
-    font-family: Lato, sans-serif;
-    color: #888;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
 }
 
 .input__text:focus {
-    color: #333333;
+  color: #333333;
 }
 
 /* Task list */
 .list__item {
-    overflow: hidden;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .input__checkbox {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .todo__list__label,
 .completed__list__label {
-    padding-left: 10px;
-    box-sizing: border-box;
-    font-size: 18px;
-    width: 226px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
 }
 
 .input__text {
-    width: 226px;
+  width: 226px;
 }
 
 .delete-button:hover {
-    color: #CF2323;
+  color: #CF2323;
 }
 
 .delete-button__img {
-    height: 2em;
-    transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
 }
 
 .delete-button__img:hover {
-    transform: rotateZ(0);
+  transform: rotateZ(0);
 }
 
 /* Completed */
 .completed__list__label {
-    text-decoration: line-through;
-    color: #888;
+  text-decoration: line-through;
+  color: #888;
 }
 
 /* Edit Task */
 .input__invisible {
-    display: none;
+  display: none;
 }
 
 .input__visible {
-    display: inline-block;
-    width: 224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .editMode .todo__list__label,
 .editMode .completed__list__label {
-    display: none;
+  display: none;
 }
