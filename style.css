@@ -156,7 +156,7 @@ body {
   width: 224px;
 }
 
-.editMode .todo__list__label,
-.editMode .completed__list__label {
+.edit-mode .todo__list__label,
+.edit-mode .completed__list__label {
   display: none;
 }
