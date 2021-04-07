@@ -63,7 +63,7 @@ const addTask = () => {
 }
 const turnOffEditMode = (listItem) => {
     const label = listItem.querySelector('label');
-    const containsClass = listItem.classList.contains('editMode');
+    const containsClass = listItem.classList.contains('edit-mode');
     const editInput = listItem.querySelector('.input__invisible, .input__visible');
     const editBtn = listItem.querySelector('.edit-button');
 
@@ -80,7 +80,7 @@ const turnOffEditMode = (listItem) => {
         editBtn.innerText = 'Save';
     }
     // toggle .editmode on the parent.
-    listItem.classList.toggle('editMode');
+    listItem.classList.toggle('edit-mode');
 };
 // Edit an existing task.
 const editTask = ({ target }) => {
@@ -106,10 +106,9 @@ const taskCompleted = ({ target }) => {
     const listItem = target.parentNode;
     const label = listItem.querySelector('.todo__list__label');
 
-    if (listItem.classList.contains('editMode')) {
+    if (listItem.classList.contains('edit-mode')) {
         turnOffEditMode(listItem);
     }
-    // listItem.classList.remove('editMode');
     label.classList.remove('todo__list__label');
     label.classList.add('completed__list__label');
 
